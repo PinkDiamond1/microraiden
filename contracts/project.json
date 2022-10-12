@@ -211,7 +211,7 @@
       },
       "web3": {
         "eth": {
-            "default_account": "0xd96b724286c592758de7cbd72c086a8a8605417f"
+            "default_account": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
         },
         "provider": {
           "class": "web3.providers.rpc.HTTPProvider",
@@ -302,7 +302,7 @@
     },
     "InfuraMainnet": {
       "eth": {
-        "default_account": "0x0000000000000000000000000000000000000001"
+        "default_account": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
       },
       "provider": {
         "class": "web3.providers.rpc.HTTPProvider",
@@ -313,7 +313,7 @@
     },
     "InfuraRopsten": {
       "eth": {
-        "default_account": "0x0000000000000000000000000000000000000001"
+        "default_account": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
       },
       "provider": {
         "class": "web3.providers.rpc.HTTPProvider",
