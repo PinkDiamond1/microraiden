@@ -13,7 +13,7 @@ Example:
 
         from config import NETWORK_CFG
 
-        NETWORK_CFG.gas_price = 15 * denoms.gwei
+        NETWORK_CFG.gas_price = 3 * denoms.gwei
 """
 from eth_utils import denoms
 from collections import namedtuple, OrderedDict
@@ -23,7 +23,7 @@ from functools import partial
 network_config_defaults = OrderedDict(
     (('channel_manager_address', None),
      ('start_sync_block', 0),
-     ('gas_price', 20 * denoms.gwei),
+     ('gas_price', 3 * denoms.gwei),
      ('gas_limit', 130000),
      # pot = plain old transaction, for lack of better term
      ('pot_gas_limit', 21000))
@@ -41,23 +41,23 @@ NetworkConfig = partial(
 NETWORK_CONFIG_DEFAULTS = {
     # mainnet
     1: NetworkConfig(
-        channel_manager_address='0x1440317CB15499083dEE3dDf49C2bD51D0d92e33',
+        channel_manager_address='0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1',
         start_sync_block=4958602,
-        gas_price=20 * denoms.gwei
+        gas_price=3 * denoms.gwei
     ),
     # ropsten
     3: NetworkConfig(
-        channel_manager_address='0x74434527b8E6C8296506D61d0faF3D18c9e4649A',
+        channel_manager_address='0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0',
         start_sync_block=2507629
     ),
     # rinkeby
     4: NetworkConfig(
-        channel_manager_address='0xbEc8fb898E6Da01152576d1A1ACdd2c957E56fb1',
+        channel_manager_address='0x3008F141b44E8e44582f9673EEa0F63F37536474',
         start_sync_block=1642336
     ),
     # kovan
     42: NetworkConfig(
-        channel_manager_address='0xeD94E711e9DE1FF1E7dd34C39F0d4338A6A6ef92',
+        channel_manager_address='0xFF24D15afb9Eb080c089053be99881dd18aa1090',
         start_sync_block=5523491
     ),
     # internal - used only with ethereum tester
